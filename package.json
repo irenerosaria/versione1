@@ -1,0 +1,19 @@
+{
+  "name": "versioning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irenerosaria/versione1.git"
+  },
+  "author": "colonia-irene@hotmail.it",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irenerosaria/versione1/issues"
+  },
+  "homepage": "https://github.com/irenerosaria/versione1#readme"
+}
