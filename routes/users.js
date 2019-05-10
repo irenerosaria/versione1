@@ -20,17 +20,6 @@ function(req, res) {
   });
 });
 
-<<<<<<< HEAD
-router.get('/', function(req, res) {
-    User.find(function(err, users) {
-      if (err) return res.status(500).json({error: err});
-      res.json(users);
-    });
-  });
-
-  
-
-=======
 router.get('/:id' , function(req, res) {
     User.findOne({_id:  req.params.id}, function (err, user){
         if (err) return res.status(500).json({error:err});
@@ -38,5 +27,4 @@ router.get('/:id' , function(req, res) {
         res.json(user);
     });
 });
->>>>>>> feature_2
 module.exports = router;
