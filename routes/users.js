@@ -26,7 +26,10 @@ router.get('/', function(req, res) {
       res.json(users);
     });
   });
+<<<<<<< HEAD
 
   
 
+=======
+>>>>>>> feature_2
 module.exports = router;
