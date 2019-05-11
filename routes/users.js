@@ -20,16 +20,21 @@ function(req, res) {
   });
 });
 
-router.get('/', function(req, res) {
-    User.find(function(err, users) {
-      if (err) return res.status(500).json({error: err});
-      res.json(users);
+router.get('/:id' , function(req, res) {
+    User.findOne({_id:  req.params.id}, function (err, user){
+        if (err) return res.status(500).json({error:err});
+        if (!user) return res.status(400).json({message:  'Utente non trovato'});
+        res.json(user);
     });
+<<<<<<< HEAD
   });
 <<<<<<< HEAD
 
   
 
 =======
+>>>>>>> feature_2
+=======
+});
 >>>>>>> feature_2
 module.exports = router;
