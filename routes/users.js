@@ -26,15 +26,5 @@ router.get('/:id' , function(req, res) {
         if (!user) return res.status(400).json({message:  'Utente non trovato'});
         res.json(user);
     });
-<<<<<<< HEAD
   });
-<<<<<<< HEAD
-
-  
-
-=======
->>>>>>> feature_2
-=======
-});
->>>>>>> feature_2
 module.exports = router;
